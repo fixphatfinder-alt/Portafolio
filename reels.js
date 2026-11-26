@@ -63,8 +63,8 @@ for (const button of document.querySelectorAll('[data-reel]')) {
     const project = document.querySelector(`[data-project="${slug}"]`);
     viewerTitle.textContent = project.querySelector('h3').textContent;
     viewerError.hidden = true;
-    viewerFile.href = `assets/reels/${slug}.mp4`;
-    player.poster = `assets/reels/${slug}.webp`;
+    viewerFile.href = `${slug}.mp4`;
+    player.poster = `${slug}.webp`;
     player.src = viewerFile.href;
     viewer.showModal();
     document.body.classList.add('viewer-open');

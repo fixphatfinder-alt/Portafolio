@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio personal de edición audiovisual. Reels, textos animados y contenido para redes sociales.">
+  <meta name="theme-color" content="#d9f2ff">
+  <title>Portafolio | Edición audiovisual</title>
+  <link rel="preload" href="inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="reels.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="masthead shell">
+    <a class="wordmark" href="#inicio">Portafolio</a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+    </nav>
+  </header>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-type">
+          <p class="hero-category">Edición audiovisual</p>
+          <h1 id="hero-title">Portafolio<span>.</span></h1>
+          <p class="hero-deck">Reels y edición de video para redes sociales.</p>
+          <a class="pill hero-action" href="#proyectos">Ver proyectos</a>
+        </div>
+        <div class="hero-stage">
+          <div class="stage-orbit" aria-hidden="true"></div>
+          <button class="stage-card stage-left" type="button" data-reel="california" aria-label="Ver reel de California desde la portada">
+            <img src="california-portada.webp" alt="" width="380" height="676">
+          </button>
+          <button class="stage-card stage-right" type="button" data-reel="huerta-grande" aria-label="Ver reel de Huerta Grande desde la portada">
+            <img src="huerta-portada.webp" alt="" width="380" height="676">
+          </button>
+          <div class="stage-feature">
+            <div class="phone hero-phone">
+              <video class="teaser" muted loop playsinline preload="none" poster="soliluz-portada.webp" data-src="avance-soliluz.mp4" aria-hidden="true"></video>
+              <button class="phone-play" type="button" data-reel="soliluz" aria-label="Ver reel completo de Soliluz">
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="stage-caption">
+              <span>Casa en Soliluz</span>
+              <button class="teaser-toggle" type="button" hidden>Pausar avance</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="shell about-layout">
+        <h2 id="about-title" data-reveal>Sobre mí</h2>
+        <div class="about-copy" data-reveal>
+          <p class="deck">Edito videos verticales para mostrar propiedades en redes sociales.</p>
+          <p>Trabajo con tomas, textos animados y sonido para guiar la mirada por cada espacio y resaltar sus detalles.</p>
+          <ul class="skills" aria-label="Áreas de trabajo">
+            <li>Edición vertical</li><li>Textos animados</li><li>Voz en off y música</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="proyectos" aria-labelledby="work-title">
+      <div class="shell work-inner">
+        <header class="work-heading" data-reveal>
+          <h2 id="work-title">Trabajo<br>seleccionado</h2>
+          <p>Reels para Navarrete Inmobiliaria</p>
+        </header>
+        <div class="project-grid">
+          <article class="project" data-project="soliluz" data-reveal>
+            <button class="phone poster" type="button" data-reel="soliluz" aria-label="Ver reel de la casa en Soliluz">
+              <img src="soliluz.webp" alt="" width="540" height="960" loading="lazy">
+              <span class="poster-play" aria-hidden="true"><span class="play-icon"></span></span>
+            </button>
+            <h3>Casa en Soliluz</h3>
+            <p>Recorrido residencial</p>
+            <details class="edit-notes">
+              <summary>Cómo lo edité</summary>
+              <p>Ordené las tomas como una visita, desde la fachada y el parque hasta los interiores y la terraza. Usé rótulos para señalar cada cambio de ambiente.</p>
+            </details>
+          </article>
+          <article class="project" data-project="california" data-reveal>
+            <button class="phone poster" type="button" data-reel="california" aria-label="Ver reel del dúplex en California">
+              <img src="california.webp" alt="" width="540" height="960" loading="lazy">
+              <span class="poster-play" aria-hidden="true"><span class="play-icon"></span></span>
+            </button>
+            <h3>Dúplex en California</h3>
+            <p>Montaje y voz en off</p>
+          </article>
+          <article class="project" data-project="huanchaco" data-reveal>
+            <button class="phone poster" type="button" data-reel="huanchaco" aria-label="Ver reel de los lotes industriales en Huanchaco">
+              <img src="huanchaco.webp" alt="" width="540" height="960" loading="lazy">
+              <span class="poster-play" aria-hidden="true"><span class="play-icon"></span></span>
+            </button>
+            <h3>Lotes en Huanchaco</h3>
+            <p>Vistas aéreas con rótulos</p>
+            <details class="edit-notes">
+              <summary>Cómo lo edité</summary>
+              <p>Combiné tomas a nivel del suelo con una vista aérea. El contorno sobre el terreno ayuda a ubicar el área en alquiler y entender su escala.</p>
+            </details>
+          </article>
+          <article class="project" data-project="huerta-grande" data-reveal>
+            <button class="phone poster" type="button" data-reel="huerta-grande" aria-label="Ver reel del edificio en Huerta Grande">
+              <img src="huerta-grande.webp" alt="" width="540" height="960" loading="lazy">
+              <span class="poster-play" aria-hidden="true"><span class="play-icon"></span></span>
+            </button>
+            <h3>Edificio en Huerta Grande</h3>
+            <p>Edición y textos animados</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="shell footer">
+    <span>Portafolio de edición audiovisual</span>
+    <a href="#inicio">Volver al inicio</a>
+  </footer>
+
+  <dialog class="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-top">
+      <h2 id="viewer-title"></h2>
+      <form method="dialog"><button class="viewer-close" type="submit" autofocus>Cerrar</button></form>
+    </div>
+    <video class="viewer-player" controls playsinline preload="metadata" aria-labelledby="viewer-title"></video>
+    <p class="viewer-error" role="status" hidden>El video no se pudo cargar. <a class="viewer-file">Abrir el archivo MP4</a></p>
+  </dialog>
+</body>
+</html>
